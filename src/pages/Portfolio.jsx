@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import TextPressure from '../components/TextPressure';
 import MagneticButton from '../components/MagneticButton';
 import LiquidEther from '../components/LiquidEther';
@@ -15,7 +15,42 @@ import FeaturedProjects from '../components/sections/FeaturedProjects';
 import Specializations from '../components/sections/Specializations';
 import SocialProof from '../components/sections/SocialProof';
 
+const RotatingRoles = () => {
+  const roles = [
+    "Growth Marketing",
+    "Digital Strategy",
+    "Marketing Operations",
+    "Demand Generation"
+  ];
+  const [roleIndex, setRoleIndex] = useState(0);
+  const [fade, setFade] = useState(true);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setFade(false);
+      setTimeout(() => {
+        setRoleIndex((prev) => (prev + 1) % roles.length);
+        setFade(true);
+      }, 500);
+    }, 3500);
+    return () => clearInterval(interval);
+  }, []);
+
+  return (
+    <h2 style={{
+      transition: 'opacity 0.5s ease-in-out',
+      opacity: fade ? 1 : 0,
+      minHeight: '80px',
+      display: 'flex',
+      alignItems: 'center'
+    }}>
+      {roles[roleIndex]}
+    </h2>
+  );
+};
+
 function Portfolio() {
+
   return (
     <>
       <SmoothCursor />
@@ -66,20 +101,26 @@ function Portfolio() {
             </div>
             
             <div className="hero-text">
-              <h1 className="huge-title" style={{ height: '180px', width: '80%', position: 'relative', transform: 'translateY(-20px)' }}>
+              <div className="huge-title-container" style={{ width: '85%', position: 'relative', marginBottom: '20px', marginTop: '8px' }}>
                 <TextPressure
                   text="ASHTON KITT"
+                  fontFamily='"Bricolage Grotesque", sans-serif'
+                  fontUrl={false}
                   flex={true}
                   alpha={false}
                   stroke={false}
                   width={true}
                   weight={true}
-                  italic={true}
-                  scale={true}
+                  italic={false} /* Bricolage does not have ital axis on Google Fonts by default */
+                  scale={false}
                   textColor="#ffffff"
                   minFontSize={36}
+                  minWdth={75}
+                  maxWdth={100}
+                  minWght={200}
+                  maxWght={800}
                 />
-              </h1>
+              </div>
               <p className="subtitle">I Build Revenue-Generating Marketing Systems.<br/>Websites • Funnels • CRM • Automation • SEO</p>
               <MagneticButton className="magnetic-button-container">
                 <a href="#proof" className="view-work-btn">VIEW PROOF ↗</a>
@@ -121,7 +162,7 @@ function Portfolio() {
             <section id="home" className="wireframe-section home-section">
               <div className="availability">
                 <span className="availability-label">AVAILABLE FOR <div className="dot"></div></span>
-                <h2>Growth &<br/>Strategy Roles</h2>
+                <RotatingRoles />
               </div>
 
               <div className="testimonial">

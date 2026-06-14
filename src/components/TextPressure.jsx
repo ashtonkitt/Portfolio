@@ -7,8 +7,8 @@ const dist = (a, b) => {
 };
 
 const getAttr = (distance, maxDist, minVal, maxVal) => {
-  const val = maxVal - Math.abs((maxVal * distance) / maxDist);
-  return Math.max(minVal, val + minVal);
+  const progress = Math.max(0, Math.min(1, distance / maxDist));
+  return maxVal - (maxVal - minVal) * progress;
 };
 
 const debounce = (func, delay) => {
@@ -39,7 +39,11 @@ const TextPressure = ({
   strokeColor = '#FF0000',
   className = '',
 
-  minFontSize = 24
+  minFontSize = 24,
+  minWdth = 5,
+  maxWdth = 200,
+  minWght = 100,
+  maxWght = 900
 }) => {
   const containerRef = useRef(null);
   const titleRef = useRef(null);
@@ -134,12 +138,16 @@ const TextPressure = ({
 
           const d = dist(mouseRef.current, charCenter);
 
-          const wdth = width ? Math.floor(getAttr(d, maxDist, 5, 200)) : 100;
-          const wght = weight ? Math.floor(getAttr(d, maxDist, 100, 900)) : 400;
+          const wdth = width ? Math.floor(getAttr(d, maxDist, minWdth, maxWdth)) : 100;
+          const wght = weight ? Math.floor(getAttr(d, maxDist, minWght, maxWght)) : 400;
           const italVal = italic ? getAttr(d, maxDist, 0, 1).toFixed(2) : 0;
           const alphaVal = alpha ? getAttr(d, maxDist, 0, 1).toFixed(2) : 1;
 
-          const newFontVariationSettings = `'wght' ${wght}, 'wdth' ${wdth}, 'ital' ${italVal}`;
+          const settings = [];
+          if (weight) settings.push(`'wght' ${wght}`);
+          if (width) settings.push(`'wdth' ${wdth}`);
+          if (italic) settings.push(`'ital' ${italVal}`);
+          const newFontVariationSettings = settings.join(', ');
 
           if (span.style.fontVariationSettings !== newFontVariationSettings) {
             span.style.fontVariationSettings = newFontVariationSettings;
@@ -160,11 +168,13 @@ const TextPressure = ({
   const styleElement = useMemo(() => {
     return (
       <style>{`
+        ${fontUrl ? `
         @font-face {
           font-family: '${fontFamily}';
           src: url('${fontUrl}');
           font-style: normal;
         }
+        ` : ''}
 
         .flex {
           display: flex;
@@ -202,10 +212,7 @@ const TextPressure = ({
         position: 'relative',
         width: '100%',
         height: '100%',
-        background: 'transparent',
-        display: 'flex',
-        flexDirection: 'column',
-        justifyContent: 'center'
+        background: 'transparent'
       }}
     >
       {styleElement}
@@ -235,10 +242,10 @@ const TextPressure = ({
             style={{
               display: char === ' ' ? 'inline-block' : 'inline-block',
               color: stroke ? undefined : textColor,
-              width: char === ' ' ? '0.5em' : 'auto',
+              width: char === ' ' ? '0.5em' : 'auto'
             }}
           >
-            {char === ' ' ? '' : char}
+            {char === ' ' ? '\u00A0' : char}
           </span>
         ))}
       </h1>

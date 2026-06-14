@@ -88,13 +88,13 @@ function MyStory() {
   const pathLength = useTransform(scrollYProgress, [0, 1], [0, 1]);
 
   // Generate Circuit Board SVG Path
-  let pathD = `M 0 50 `;
+  let pathD = ``;
   const nodes = [];
 
   storyEvents.forEach((event, i) => {
     const isTop = i % 2 === 0;
-    const targetY = isTop ? 20 : 80;
-    const prevY = i === 0 ? 50 : (isTop ? 80 : 20);
+    const targetY = isTop ? windowSize.height * 0.2 : windowSize.height * 0.8;
+    const prevY = isTop ? windowSize.height * 0.8 : windowSize.height * 0.2;
     
     const cardCenterX = (i * windowWidth) + (windowWidth / 2);
     
@@ -110,10 +110,7 @@ function MyStory() {
     const corner = Math.min(30, diffY / 2); // Prevent overlapping loops
     
     if (i === 0) {
-      pathD += `L ${startX - corner} 50 `;
-      pathD += `Q ${startX} 50, ${startX} ${50 + corner * dirY} `;
-      pathD += `L ${startX} ${targetY - corner * dirY} `;
-      pathD += `Q ${startX} ${targetY}, ${startX + corner} ${targetY} `;
+      pathD += `M ${cardCenterX} ${targetY} `;
     } else {
       const midX = prevEndX + (startX - prevEndX) / 2;
       pathD += `L ${midX - corner} ${prevY} `;
@@ -161,6 +158,48 @@ function MyStory() {
     });
   };
 
+  // JS Scroll Snapping for the timeline - Re-added with longer timeout for smoothness
+  useEffect(() => {
+    let timeoutId;
+    const handleScroll = () => {
+      clearTimeout(timeoutId);
+      timeoutId = setTimeout(() => {
+        if (!targetRef.current) return;
+        
+        const rect = targetRef.current.getBoundingClientRect();
+        
+        // Only snap if the timeline section is completely filling the viewport
+        const isInsideSection = rect.top <= 0 && rect.bottom >= window.innerHeight;
+        
+        if (isInsideSection) {
+          const sectionTop = rect.top + window.scrollY;
+          const currentScroll = window.scrollY;
+          
+          const scrollDistanceIntoSection = currentScroll - sectionTop;
+          const nearestIndex = Math.round(scrollDistanceIntoSection / windowSize.height);
+          
+          // Clamp index to available cards
+          const safeIndex = Math.max(0, Math.min(nearestIndex, storyEvents.length - 1));
+          const targetScroll = sectionTop + (safeIndex * windowSize.height);
+          
+          // Only snap if we're off by more than 50 pixels to prevent micro-jumps
+          if (Math.abs(currentScroll - targetScroll) > 50) {
+            window.scrollTo({
+              top: targetScroll,
+              behavior: 'smooth'
+            });
+          }
+        }
+      }, 500); // Wait 500ms after scroll ends before snapping (allows trackpad momentum to stop)
+    };
+    
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+      clearTimeout(timeoutId);
+    };
+  }, [windowSize.height, storyEvents.length]);
+
   return (
     <section id="story" className="horizontal-scroll-section" style={{ height: `${sectionHeight}vh` }} ref={targetRef}>
       
@@ -170,14 +209,14 @@ function MyStory() {
         <motion.div className="horizontal-map" style={{ width: `${TOTAL_WIDTH}px`, x: xTransform }}>
           
           <div className="map-svg-container">
-            <svg viewBox={`0 0 ${TOTAL_WIDTH} 100`} preserveAspectRatio="none" className="circuit-board-svg">
+            <svg viewBox={`0 0 ${TOTAL_WIDTH} ${windowSize.height}`} className="circuit-board-svg">
               <path 
                 d={pathD} 
-                fill="transparent" stroke="rgba(0,0,0,0.1)" strokeWidth="2" strokeDasharray="4 4" vectorEffect="non-scaling-stroke"
+                fill="transparent" stroke="rgba(0,0,0,0.1)" strokeWidth="2" strokeDasharray="4 4"
               />
               <motion.path 
                 d={pathD} 
-                fill="transparent" stroke="var(--orange-dark)" strokeWidth="4" vectorEffect="non-scaling-stroke"
+                fill="transparent" stroke="var(--orange-dark)" strokeWidth="4"
                 style={{ pathLength }}
               />
             </svg>
