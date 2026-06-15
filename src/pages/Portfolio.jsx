@@ -9,18 +9,23 @@ import { Mail } from 'lucide-react';
 
 // New sections
 import ByTheNumbers from '../components/sections/ByTheNumbers';
+import About from '../components/sections/About';
 import MyStory from '../components/sections/MyStory';
 import ProofVault from '../components/sections/ProofVault';
-import FeaturedProjects from '../components/sections/FeaturedProjects';
+import TechStack from '../components/sections/TechStack';
 import Specializations from '../components/sections/Specializations';
 import SocialProof from '../components/sections/SocialProof';
 
 const RotatingRoles = () => {
   const roles = [
-    "Growth Marketing",
-    "Digital Strategy",
-    "Marketing Operations",
-    "Demand Generation"
+    <>Growth Marketing<br/>Manager</>,
+    <>Digital Marketing<br/>Manager</>,
+    <>Marketing Operations<br/>Manager</>,
+    <>Revenue Operations<br/>Specialist</>,
+    <>Demand Generation<br/>Manager</>,
+    <>Customer Acquisition<br/>Manager</>,
+    <>Director of<br/>Growth</>,
+    <>Head of<br/>Growth</>
   ];
   const [roleIndex, setRoleIndex] = useState(0);
   const [fade, setFade] = useState(true);
@@ -40,9 +45,10 @@ const RotatingRoles = () => {
     <h2 style={{
       transition: 'opacity 0.5s ease-in-out',
       opacity: fade ? 1 : 0,
-      minHeight: '80px',
+      height: '110px',
       display: 'flex',
-      alignItems: 'center'
+      alignItems: 'flex-start',
+      whiteSpace: 'nowrap'
     }}>
       {roles[roleIndex]}
     </h2>
@@ -145,7 +151,7 @@ function Portfolio() {
           <div className="top-nav">
             <nav>
               <a href="#proof">PROOF</a>
-              <a href="#projects">PROJECTS</a>
+              <a href="#tech-stack">TECH STACK</a>
               <Link to="/resume">RESUME</Link>
               <a href="#story">TIMELINE</a>
             </nav>
@@ -166,8 +172,7 @@ function Portfolio() {
               </div>
 
               <div className="testimonial">
-                <div className="quote-icon">"</div>
-                <p>We've collaborated on various projects together, he's very professional and a master in his craft.</p>
+                <p>"We've collaborated on various projects together, he's very professional and a master in his craft."</p>
                 <div className="author">
                   <div>
                     <strong>Aman V.</strong>
@@ -188,9 +193,10 @@ function Portfolio() {
 
       <main className="main-content">
         <ByTheNumbers />
+        <About />
         <MyStory />
         <ProofVault />
-        <FeaturedProjects />
+        <TechStack />
         <Specializations />
         <SocialProof />
       </main>

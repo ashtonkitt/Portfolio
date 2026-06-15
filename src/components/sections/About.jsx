@@ -1,76 +1,75 @@
 import React from 'react';
-import { TrendingUp, Users, DollarSign, Target, Award, ShoppingCart } from 'lucide-react';
+import { CometCard } from '../ui/CometCard';
 
 const About = () => {
-  const metrics = [
-    { value: '$8M+', label: 'Launch Revenue Supported', icon: <Target size={20} /> },
-    { value: '500K+', label: 'Followers Built', icon: <Users size={20} /> },
-    { value: '$500K+', label: 'Revenue Growth Generated', icon: <TrendingUp size={20} /> },
-    { value: '14K+', label: 'Community Members', icon: <Users size={20} /> },
-    { value: '$100K+', label: 'E-Commerce Revenue', icon: <ShoppingCart size={20} /> },
-    { value: '10+', label: 'Years Marketing Experience', icon: <Award size={20} /> },
+  const workHistory = [
+    { year: '2026 - Present', role: 'Full-Stack Growth Strategist', company: 'Independent Consulting' },
+    { year: '2025 - Present', role: 'Sales & Revenue Operations', company: 'High-Velocity Sales Floor' },
+    { year: '2024 - 2025', role: 'Performance Marketing & Paid Media', company: 'Digital Agency & Client Portfolios' },
+    { year: '2023 - 2024', role: 'Automation & CRM Architecture', company: 'GoHighLevel Systems' },
+    { year: '2023', role: 'Brand & Acquisition Director', company: 'Solar Sense Solutions & Flare Solar' },
+    { year: '2021 - 2022', role: 'Digital Marketing Foundations', company: 'Local Businesses & Direct Response' },
+    { year: '2019 - 2021', role: 'Viral Audience Acquisition', company: '1.69M+ Network (Twitter/IG)' },
+    { year: '2017 - 2021', role: 'E-Commerce Growth Specialist', company: 'Daily Warm' },
+    { year: '2017 - 2019', role: 'Experiential & Event Marketing', company: 'National Entity & Cinematic Events' },
+    { year: '2017', role: 'Early Sales & E-Commerce Arbitrage', company: 'Independent Sourcing' },
   ];
 
   return (
-    <section id="about" className="wireframe-section">
-      <div className="section-header">
-        <h2>My Story</h2>
-        <span className="section-subtitle">From Heavy Equipment to High Growth</span>
+    <section id="about" className="wireframe-section" style={{ borderBottom: 'none' }}>
+      <div className="section-header" style={{ display: 'flex', alignItems: 'baseline', gap: '20px', flexWrap: 'wrap' }}>
+        <h2 style={{ margin: 0 }}>My Story</h2>
+        <span className="section-subtitle" style={{ margin: 0 }}>Engineering Customer Acquisition & Growth</span>
       </div>
       
       <div className="about-content">
         <div className="about-text">
           <p className="lead-text">
-            Before marketing, I was operating heavy equipment and working construction jobs.
+            I'm a growth-focused marketing strategist and systems builder with over 10 years of experience engineering customer acquisition engines.
           </p>
           <p>
-            At night I was building e-commerce stores, growing Instagram pages, and learning how attention turns into revenue.
+            I specialize in designing conversion-focused websites, deploying CRM automations, and executing omni-channel acquisition strategies that turn attention into measurable revenue.
           </p>
           <p>
-            What started with social media growth evolved into e-commerce, product launches, Web3 communities, lead generation, SEO, paid advertising, automation, and growth marketing.
+            Over the last four years, I've served as a Lead Digital Growth Strategist, combining deep technical expertise with growth architecture to build scalable systems for lead capture, review generation, and automated customer follow-up.
           </p>
           <p>
-            Today I help businesses acquire customers and build systems that scale.
+            I deliver end-to-end infrastructure that supports business growth from the very first click to the closed deal. I'm an execution-driven specialist who thrives on building the systems that actually move the needle.
           </p>
-
-          <div className="metrics-grid">
-            {metrics.map((metric, idx) => (
-              <div key={idx} className="metric-box">
-                <div className="metric-icon">{metric.icon}</div>
-                <div className="metric-value">{metric.value}</div>
-                <div className="metric-label">{metric.label}</div>
-              </div>
-            ))}
-          </div>
           
           <div className="experience-timeline">
             <h3>Experience</h3>
-            <div className="timeline-item">
-              <div className="timeline-date">2022 - Present</div>
-              <div className="timeline-details">
-                <h4>Founder & CMO</h4>
-                <span>Kits Inc.</span>
+            {workHistory.map((item, idx) => (
+              <div key={idx} className="timeline-item">
+                <div className="timeline-date">{item.year}</div>
+                <div className="timeline-details">
+                  <h4>{item.role}</h4>
+                  <span>{item.company}</span>
+                </div>
               </div>
-            </div>
-            <div className="timeline-item">
-              <div className="timeline-date">2020 - 2022</div>
-              <div className="timeline-details">
-                <h4>Growth Marketing Manager</h4>
-                <span>Daily Warm</span>
-              </div>
-            </div>
-            <div className="timeline-item">
-              <div className="timeline-date">2018 - 2020</div>
-              <div className="timeline-details">
-                <h4>Marketing Strategist</h4>
-                <span>Solar Sense</span>
-              </div>
-            </div>
+            ))}
           </div>
         </div>
         
-        <div className="about-image-placeholder">
-          <span>Profile Image Placeholder</span>
+        <div className="about-image-placeholder" style={{ flexDirection: 'column', gap: '15px', height: 'auto' }}>
+          <div style={{ width: '100%', height: '420px' }}>
+            <CometCard>
+              <img 
+                src="/ashton-about.jpg" 
+                alt="Ashton Kitt" 
+                style={{ 
+                  width: '100%', 
+                  height: '100%', 
+                  objectFit: 'cover', 
+                  borderRadius: '20px',
+                  boxShadow: "rgba(0, 0, 0, 0.1) 0px 10px 30px 0px" 
+                }} 
+              />
+            </CometCard>
+          </div>
+          <div style={{ fontFamily: 'monospace', fontSize: '0.75rem', color: 'var(--orange-light)', letterSpacing: '2px', textTransform: 'uppercase', opacity: 0.8, marginTop: '5px' }}>
+            // Hover To Interact
+          </div>
         </div>
       </div>
     </section>

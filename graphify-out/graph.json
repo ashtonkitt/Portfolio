@@ -4,6 +4,15 @@
   "graph": {},
   "nodes": [
     {
+      "label": "vite.config.js",
+      "file_type": "code",
+      "source_file": "vite.config.js",
+      "source_location": "L1",
+      "id": "vite_config_js",
+      "community": 15,
+      "norm_label": "vite.config.js"
+    },
+    {
       "label": "package.json",
       "file_type": "code",
       "source_file": "package.json",
@@ -184,15 +193,6 @@
       "norm_label": "three"
     },
     {
-      "label": "vite.config.js",
-      "file_type": "code",
-      "source_file": "vite.config.js",
-      "source_location": "L1",
-      "id": "vite_config_js",
-      "community": 15,
-      "norm_label": "vite.config.js"
-    },
-    {
       "label": "counter.js",
       "file_type": "code",
       "source_file": "src/counter.js",
@@ -270,7 +270,7 @@
       "source_file": "src/components/MagneticButton.jsx",
       "source_location": "L1",
       "id": "src_components_magneticbutton_jsx",
-      "community": 6,
+      "community": 0,
       "norm_label": "magneticbutton.jsx"
     },
     {
@@ -279,7 +279,7 @@
       "source_file": "src/components/MagneticButton.jsx",
       "source_location": "L4",
       "id": "components_magneticbutton_magneticbutton",
-      "community": 6,
+      "community": 0,
       "norm_label": "magneticbutton()"
     },
     {
@@ -288,7 +288,7 @@
       "source_file": "src/components/SmoothCursor.jsx",
       "source_location": "L1",
       "id": "src_components_smoothcursor_jsx",
-      "community": 0,
+      "community": 4,
       "norm_label": "smoothcursor.jsx"
     },
     {
@@ -297,7 +297,7 @@
       "source_file": "src/components/SmoothCursor.jsx",
       "source_location": "L3",
       "id": "components_smoothcursor_smoothcursor",
-      "community": 0,
+      "community": 4,
       "norm_label": "smoothcursor()"
     },
     {
@@ -306,7 +306,7 @@
       "source_file": "src/components/LiquidEther.jsx",
       "source_location": "L1",
       "id": "src_components_liquidether_jsx",
-      "community": 5,
+      "community": 0,
       "norm_label": "liquidether.jsx"
     },
     {
@@ -315,7 +315,7 @@
       "source_file": "src/components/LiquidEther.jsx",
       "source_location": "L5",
       "id": "components_liquidether_liquidether",
-      "community": 5,
+      "community": 0,
       "norm_label": "liquidether()"
     },
     {
@@ -398,6 +398,42 @@
       "id": "components_socialicons_twitter",
       "community": 0,
       "norm_label": "twitter()"
+    },
+    {
+      "label": "ScrollToTop.jsx",
+      "file_type": "code",
+      "source_file": "src/components/ScrollToTop.jsx",
+      "source_location": "L1",
+      "id": "src_components_scrolltotop_jsx",
+      "community": 6,
+      "norm_label": "scrolltotop.jsx"
+    },
+    {
+      "label": "ScrollToTop()",
+      "file_type": "code",
+      "source_file": "src/components/ScrollToTop.jsx",
+      "source_location": "L3",
+      "id": "components_scrolltotop_scrolltotop",
+      "community": 6,
+      "norm_label": "scrolltotop()"
+    },
+    {
+      "label": "Footer.jsx",
+      "file_type": "code",
+      "source_file": "src/components/Footer.jsx",
+      "source_location": "L1",
+      "id": "src_components_footer_jsx",
+      "community": 10,
+      "norm_label": "footer.jsx"
+    },
+    {
+      "label": "Footer()",
+      "file_type": "code",
+      "source_file": "src/components/Footer.jsx",
+      "source_location": "L3",
+      "id": "components_footer_footer",
+      "community": 10,
+      "norm_label": "footer()"
     },
     {
       "label": "Projects.jsx",
@@ -484,28 +520,10 @@
       "label": "ByTheNumbers()",
       "file_type": "code",
       "source_file": "src/components/sections/ByTheNumbers.jsx",
-      "source_location": "L3",
+      "source_location": "L4",
       "id": "sections_bythenumbers_bythenumbers",
       "community": 0,
       "norm_label": "bythenumbers()"
-    },
-    {
-      "label": "MyStory.jsx",
-      "file_type": "code",
-      "source_file": "src/components/sections/MyStory.jsx",
-      "source_location": "L1",
-      "id": "src_components_sections_mystory_jsx",
-      "community": 0,
-      "norm_label": "mystory.jsx"
-    },
-    {
-      "label": "MyStory()",
-      "file_type": "code",
-      "source_file": "src/components/sections/MyStory.jsx",
-      "source_location": "L4",
-      "id": "sections_mystory_mystory",
-      "community": 0,
-      "norm_label": "mystory()"
     },
     {
       "label": "ProofVault.jsx",
@@ -517,31 +535,22 @@
       "norm_label": "proofvault.jsx"
     },
     {
-      "label": "ProofVault()",
+      "label": "ProofCard()",
       "file_type": "code",
       "source_file": "src/components/sections/ProofVault.jsx",
       "source_location": "L4",
+      "id": "sections_proofvault_proofcard",
+      "community": 9,
+      "norm_label": "proofcard()"
+    },
+    {
+      "label": "ProofVault()",
+      "file_type": "code",
+      "source_file": "src/components/sections/ProofVault.jsx",
+      "source_location": "L74",
       "id": "sections_proofvault_proofvault",
       "community": 9,
       "norm_label": "proofvault()"
-    },
-    {
-      "label": "FeaturedProjects.jsx",
-      "file_type": "code",
-      "source_file": "src/components/sections/FeaturedProjects.jsx",
-      "source_location": "L1",
-      "id": "src_components_sections_featuredprojects_jsx",
-      "community": 0,
-      "norm_label": "featuredprojects.jsx"
-    },
-    {
-      "label": "FeaturedProjects()",
-      "file_type": "code",
-      "source_file": "src/components/sections/FeaturedProjects.jsx",
-      "source_location": "L3",
-      "id": "sections_featuredprojects_featuredprojects",
-      "community": 0,
-      "norm_label": "featuredprojects()"
     },
     {
       "label": "Specializations.jsx",
@@ -567,17 +576,170 @@
       "source_file": "src/components/sections/SocialProof.jsx",
       "source_location": "L1",
       "id": "src_components_sections_socialproof_jsx",
-      "community": 10,
+      "community": 6,
       "norm_label": "socialproof.jsx"
     },
     {
       "label": "SocialProof()",
       "file_type": "code",
       "source_file": "src/components/sections/SocialProof.jsx",
-      "source_location": "L4",
+      "source_location": "L5",
       "id": "sections_socialproof_socialproof",
-      "community": 10,
+      "community": 6,
       "norm_label": "socialproof()"
+    },
+    {
+      "label": "MyStory.jsx",
+      "file_type": "code",
+      "source_file": "src/components/sections/MyStory.jsx",
+      "source_location": "L1",
+      "id": "src_components_sections_mystory_jsx",
+      "community": 0,
+      "norm_label": "mystory.jsx"
+    },
+    {
+      "label": "MyStory()",
+      "file_type": "code",
+      "source_file": "src/components/sections/MyStory.jsx",
+      "source_location": "L4",
+      "id": "sections_mystory_mystory",
+      "community": 0,
+      "norm_label": "mystory()"
+    },
+    {
+      "label": "TechStack.jsx",
+      "file_type": "code",
+      "source_file": "src/components/sections/TechStack.jsx",
+      "source_location": "L1",
+      "id": "src_components_sections_techstack_jsx",
+      "community": 0,
+      "norm_label": "techstack.jsx"
+    },
+    {
+      "label": "TechStack()",
+      "file_type": "code",
+      "source_file": "src/components/sections/TechStack.jsx",
+      "source_location": "L3",
+      "id": "sections_techstack_techstack",
+      "community": 0,
+      "norm_label": "techstack()"
+    },
+    {
+      "label": "BorderGlow.jsx",
+      "file_type": "code",
+      "source_file": "src/components/ui/BorderGlow.jsx",
+      "source_location": "L1",
+      "id": "src_components_ui_borderglow_jsx",
+      "community": 5,
+      "norm_label": "borderglow.jsx"
+    },
+    {
+      "label": "parseHSL()",
+      "file_type": "code",
+      "source_file": "src/components/ui/BorderGlow.jsx",
+      "source_location": "L4",
+      "id": "ui_borderglow_parsehsl",
+      "community": 5,
+      "norm_label": "parsehsl()"
+    },
+    {
+      "label": "buildGlowVars()",
+      "file_type": "code",
+      "source_file": "src/components/ui/BorderGlow.jsx",
+      "source_location": "L10",
+      "id": "ui_borderglow_buildglowvars",
+      "community": 5,
+      "norm_label": "buildglowvars()"
+    },
+    {
+      "label": "GRADIENT_POSITIONS",
+      "file_type": "code",
+      "source_file": "src/components/ui/BorderGlow.jsx",
+      "source_location": "L22",
+      "id": "ui_borderglow_gradient_positions",
+      "community": 5,
+      "norm_label": "gradient_positions"
+    },
+    {
+      "label": "GRADIENT_KEYS",
+      "file_type": "code",
+      "source_file": "src/components/ui/BorderGlow.jsx",
+      "source_location": "L23",
+      "id": "ui_borderglow_gradient_keys",
+      "community": 5,
+      "norm_label": "gradient_keys"
+    },
+    {
+      "label": "COLOR_MAP",
+      "file_type": "code",
+      "source_file": "src/components/ui/BorderGlow.jsx",
+      "source_location": "L24",
+      "id": "ui_borderglow_color_map",
+      "community": 5,
+      "norm_label": "color_map"
+    },
+    {
+      "label": "buildGradientVars()",
+      "file_type": "code",
+      "source_file": "src/components/ui/BorderGlow.jsx",
+      "source_location": "L26",
+      "id": "ui_borderglow_buildgradientvars",
+      "community": 5,
+      "norm_label": "buildgradientvars()"
+    },
+    {
+      "label": "easeOutCubic()",
+      "file_type": "code",
+      "source_file": "src/components/ui/BorderGlow.jsx",
+      "source_location": "L36",
+      "id": "ui_borderglow_easeoutcubic",
+      "community": 5,
+      "norm_label": "easeoutcubic()"
+    },
+    {
+      "label": "easeInCubic()",
+      "file_type": "code",
+      "source_file": "src/components/ui/BorderGlow.jsx",
+      "source_location": "L37",
+      "id": "ui_borderglow_easeincubic",
+      "community": 5,
+      "norm_label": "easeincubic()"
+    },
+    {
+      "label": "animateValue()",
+      "file_type": "code",
+      "source_file": "src/components/ui/BorderGlow.jsx",
+      "source_location": "L39",
+      "id": "ui_borderglow_animatevalue",
+      "community": 5,
+      "norm_label": "animatevalue()"
+    },
+    {
+      "label": "BorderGlow()",
+      "file_type": "code",
+      "source_file": "src/components/ui/BorderGlow.jsx",
+      "source_location": "L51",
+      "id": "ui_borderglow_borderglow",
+      "community": 5,
+      "norm_label": "borderglow()"
+    },
+    {
+      "label": "CometCard.jsx",
+      "file_type": "code",
+      "source_file": "src/components/ui/CometCard.jsx",
+      "source_location": "L1",
+      "id": "src_components_ui_cometcard_jsx",
+      "community": 11,
+      "norm_label": "cometcard.jsx"
+    },
+    {
+      "label": "CometCard()",
+      "file_type": "code",
+      "source_file": "src/components/ui/CometCard.jsx",
+      "source_location": "L3",
+      "id": "ui_cometcard_cometcard",
+      "community": 11,
+      "norm_label": "cometcard()"
     },
     {
       "label": "Portfolio.jsx",
@@ -589,10 +751,19 @@
       "norm_label": "portfolio.jsx"
     },
     {
+      "label": "RotatingRoles()",
+      "file_type": "code",
+      "source_file": "src/pages/Portfolio.jsx",
+      "source_location": "L19",
+      "id": "pages_portfolio_rotatingroles",
+      "community": 0,
+      "norm_label": "rotatingroles()"
+    },
+    {
       "label": "Portfolio()",
       "file_type": "code",
       "source_file": "src/pages/Portfolio.jsx",
-      "source_location": "L18",
+      "source_location": "L58",
       "id": "pages_portfolio_portfolio",
       "community": 0,
       "norm_label": "portfolio()"
@@ -610,10 +781,28 @@
       "label": "Resume()",
       "file_type": "code",
       "source_file": "src/pages/Resume.jsx",
-      "source_location": "L6",
+      "source_location": "L7",
       "id": "pages_resume_resume",
       "community": 4,
       "norm_label": "resume()"
+    },
+    {
+      "label": "FeaturedProjects.jsx",
+      "file_type": "code",
+      "source_file": "src/components/sections/FeaturedProjects.jsx",
+      "source_location": "L1",
+      "community": 0,
+      "norm_label": "featuredprojects.jsx",
+      "id": "src_components_sections_featuredprojects_jsx"
+    },
+    {
+      "label": "FeaturedProjects()",
+      "file_type": "code",
+      "source_file": "src/components/sections/FeaturedProjects.jsx",
+      "source_location": "L3",
+      "community": 0,
+      "norm_label": "featuredprojects()",
+      "id": "sections_featuredprojects_featuredprojects"
     }
   ],
   "links": [
@@ -623,9 +812,9 @@
       "source_file": "package.json",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "package_json",
-      "target": "ashton_kitt_portfolio_package_name",
-      "confidence_score": 1.0
+      "target": "ashton_kitt_portfolio_package_name"
     },
     {
       "relation": "contains",
@@ -633,9 +822,9 @@
       "source_file": "package.json",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "package_json",
-      "target": "ashton_kitt_portfolio_package_version",
-      "confidence_score": 1.0
+      "target": "ashton_kitt_portfolio_package_version"
     },
     {
       "relation": "contains",
@@ -643,9 +832,9 @@
       "source_file": "package.json",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "package_json",
-      "target": "ashton_kitt_portfolio_package_private",
-      "confidence_score": 1.0
+      "target": "ashton_kitt_portfolio_package_private"
     },
     {
       "relation": "contains",
@@ -653,9 +842,9 @@
       "source_file": "package.json",
       "source_location": "L5",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "package_json",
-      "target": "ashton_kitt_portfolio_package_type",
-      "confidence_score": 1.0
+      "target": "ashton_kitt_portfolio_package_type"
     },
     {
       "relation": "contains",
@@ -663,9 +852,9 @@
       "source_file": "package.json",
       "source_location": "L6",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "package_json",
-      "target": "ashton_kitt_portfolio_package_scripts",
-      "confidence_score": 1.0
+      "target": "ashton_kitt_portfolio_package_scripts"
     },
     {
       "relation": "contains",
@@ -673,9 +862,9 @@
       "source_file": "package.json",
       "source_location": "L11",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "package_json",
-      "target": "ashton_kitt_portfolio_package_devdependencies",
-      "confidence_score": 1.0
+      "target": "ashton_kitt_portfolio_package_devdependencies"
     },
     {
       "relation": "contains",
@@ -683,9 +872,9 @@
       "source_file": "package.json",
       "source_location": "L15",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "package_json",
-      "target": "ashton_kitt_portfolio_package_dependencies",
-      "confidence_score": 1.0
+      "target": "ashton_kitt_portfolio_package_dependencies"
     },
     {
       "relation": "contains",
@@ -693,9 +882,9 @@
       "source_file": "package.json",
       "source_location": "L7",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ashton_kitt_portfolio_package_scripts",
-      "target": "ashton_kitt_portfolio_package_scripts_dev",
-      "confidence_score": 1.0
+      "target": "ashton_kitt_portfolio_package_scripts_dev"
     },
     {
       "relation": "contains",
@@ -703,9 +892,9 @@
       "source_file": "package.json",
       "source_location": "L8",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ashton_kitt_portfolio_package_scripts",
-      "target": "ashton_kitt_portfolio_package_scripts_build",
-      "confidence_score": 1.0
+      "target": "ashton_kitt_portfolio_package_scripts_build"
     },
     {
       "relation": "contains",
@@ -713,9 +902,9 @@
       "source_file": "package.json",
       "source_location": "L9",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ashton_kitt_portfolio_package_scripts",
-      "target": "ashton_kitt_portfolio_package_scripts_preview",
-      "confidence_score": 1.0
+      "target": "ashton_kitt_portfolio_package_scripts_preview"
     },
     {
       "relation": "contains",
@@ -723,9 +912,9 @@
       "source_file": "package.json",
       "source_location": "L12",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ashton_kitt_portfolio_package_devdependencies",
-      "target": "ashton_kitt_portfolio_package_devdependencies_vitejs_plugin_react",
-      "confidence_score": 1.0
+      "target": "ashton_kitt_portfolio_package_devdependencies_vitejs_plugin_react"
     },
     {
       "relation": "contains",
@@ -733,9 +922,9 @@
       "source_file": "package.json",
       "source_location": "L13",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ashton_kitt_portfolio_package_devdependencies",
-      "target": "ashton_kitt_portfolio_package_devdependencies_vite",
-      "confidence_score": 1.0
+      "target": "ashton_kitt_portfolio_package_devdependencies_vite"
     },
     {
       "relation": "contains",
@@ -743,9 +932,9 @@
       "source_file": "package.json",
       "source_location": "L16",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ashton_kitt_portfolio_package_dependencies",
-      "target": "ashton_kitt_portfolio_package_dependencies_react_spring_web",
-      "confidence_score": 1.0
+      "target": "ashton_kitt_portfolio_package_dependencies_react_spring_web"
     },
     {
       "relation": "contains",
@@ -753,9 +942,9 @@
       "source_file": "package.json",
       "source_location": "L17",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ashton_kitt_portfolio_package_dependencies",
-      "target": "ashton_kitt_portfolio_package_dependencies_framer_motion",
-      "confidence_score": 1.0
+      "target": "ashton_kitt_portfolio_package_dependencies_framer_motion"
     },
     {
       "relation": "contains",
@@ -763,9 +952,9 @@
       "source_file": "package.json",
       "source_location": "L18",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ashton_kitt_portfolio_package_dependencies",
-      "target": "ashton_kitt_portfolio_package_dependencies_lucide_react",
-      "confidence_score": 1.0
+      "target": "ashton_kitt_portfolio_package_dependencies_lucide_react"
     },
     {
       "relation": "contains",
@@ -773,9 +962,9 @@
       "source_file": "package.json",
       "source_location": "L19",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ashton_kitt_portfolio_package_dependencies",
-      "target": "ashton_kitt_portfolio_package_dependencies_react",
-      "confidence_score": 1.0
+      "target": "ashton_kitt_portfolio_package_dependencies_react"
     },
     {
       "relation": "contains",
@@ -783,9 +972,9 @@
       "source_file": "package.json",
       "source_location": "L20",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ashton_kitt_portfolio_package_dependencies",
-      "target": "ashton_kitt_portfolio_package_dependencies_react_dom",
-      "confidence_score": 1.0
+      "target": "ashton_kitt_portfolio_package_dependencies_react_dom"
     },
     {
       "relation": "contains",
@@ -793,9 +982,9 @@
       "source_file": "package.json",
       "source_location": "L21",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ashton_kitt_portfolio_package_dependencies",
-      "target": "ashton_kitt_portfolio_package_dependencies_react_router_dom",
-      "confidence_score": 1.0
+      "target": "ashton_kitt_portfolio_package_dependencies_react_router_dom"
     },
     {
       "relation": "contains",
@@ -803,9 +992,9 @@
       "source_file": "package.json",
       "source_location": "L22",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ashton_kitt_portfolio_package_dependencies",
-      "target": "ashton_kitt_portfolio_package_dependencies_three",
-      "confidence_score": 1.0
+      "target": "ashton_kitt_portfolio_package_dependencies_three"
     },
     {
       "relation": "contains",
@@ -813,9 +1002,9 @@
       "source_file": "src/counter.js",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_counter_js",
-      "target": "src_counter_setupcounter",
-      "confidence_score": 1.0
+      "target": "src_counter_setupcounter"
     },
     {
       "relation": "imports_from",
@@ -824,9 +1013,9 @@
       "source_file": "src/main.jsx",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_main_jsx",
-      "target": "src_app_jsx",
-      "confidence_score": 1.0
+      "target": "src_app_jsx"
     },
     {
       "relation": "imports_from",
@@ -835,9 +1024,9 @@
       "source_file": "src/App.jsx",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_app_jsx",
-      "target": "src_pages_portfolio_jsx",
-      "confidence_score": 1.0
+      "target": "src_pages_portfolio_jsx"
     },
     {
       "relation": "imports_from",
@@ -846,9 +1035,9 @@
       "source_file": "src/App.jsx",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_app_jsx",
-      "target": "src_pages_resume_jsx",
-      "confidence_score": 1.0
+      "target": "src_pages_resume_jsx"
     },
     {
       "relation": "contains",
@@ -856,9 +1045,9 @@
       "source_file": "src/App.jsx",
       "source_location": "L6",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_app_jsx",
-      "target": "src_app_app",
-      "confidence_score": 1.0
+      "target": "src_app_app"
     },
     {
       "relation": "contains",
@@ -866,9 +1055,9 @@
       "source_file": "src/components/SplitText.jsx",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_components_splittext_jsx",
-      "target": "components_splittext_splittext",
-      "confidence_score": 1.0
+      "target": "components_splittext_splittext"
     },
     {
       "relation": "contains",
@@ -876,9 +1065,9 @@
       "source_file": "src/components/MagneticButton.jsx",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_components_magneticbutton_jsx",
-      "target": "components_magneticbutton_magneticbutton",
-      "confidence_score": 1.0
+      "target": "components_magneticbutton_magneticbutton"
     },
     {
       "relation": "imports_from",
@@ -887,9 +1076,9 @@
       "source_file": "src/pages/Portfolio.jsx",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_pages_portfolio_jsx",
-      "target": "src_components_magneticbutton_jsx",
-      "confidence_score": 1.0
+      "target": "src_components_magneticbutton_jsx"
     },
     {
       "relation": "contains",
@@ -897,9 +1086,9 @@
       "source_file": "src/components/SmoothCursor.jsx",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_components_smoothcursor_jsx",
-      "target": "components_smoothcursor_smoothcursor",
-      "confidence_score": 1.0
+      "target": "components_smoothcursor_smoothcursor"
     },
     {
       "relation": "imports_from",
@@ -908,7 +1097,18 @@
       "source_file": "src/pages/Portfolio.jsx",
       "source_location": "L5",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_pages_portfolio_jsx",
+      "target": "src_components_smoothcursor_jsx"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/Resume.jsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "src_pages_resume_jsx",
       "target": "src_components_smoothcursor_jsx",
       "confidence_score": 1.0
     },
@@ -918,9 +1118,9 @@
       "source_file": "src/components/LiquidEther.jsx",
       "source_location": "L5",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_components_liquidether_jsx",
-      "target": "components_liquidether_liquidether",
-      "confidence_score": 1.0
+      "target": "components_liquidether_liquidether"
     },
     {
       "relation": "imports_from",
@@ -929,9 +1129,9 @@
       "source_file": "src/pages/Portfolio.jsx",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_pages_portfolio_jsx",
-      "target": "src_components_liquidether_jsx",
-      "confidence_score": 1.0
+      "target": "src_components_liquidether_jsx"
     },
     {
       "relation": "contains",
@@ -939,9 +1139,9 @@
       "source_file": "src/components/TextPressure.jsx",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_components_textpressure_jsx",
-      "target": "components_textpressure_dist",
-      "confidence_score": 1.0
+      "target": "components_textpressure_dist"
     },
     {
       "relation": "contains",
@@ -949,9 +1149,9 @@
       "source_file": "src/components/TextPressure.jsx",
       "source_location": "L9",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_components_textpressure_jsx",
-      "target": "components_textpressure_getattr",
-      "confidence_score": 1.0
+      "target": "components_textpressure_getattr"
     },
     {
       "relation": "contains",
@@ -959,9 +1159,9 @@
       "source_file": "src/components/TextPressure.jsx",
       "source_location": "L14",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_components_textpressure_jsx",
-      "target": "components_textpressure_debounce",
-      "confidence_score": 1.0
+      "target": "components_textpressure_debounce"
     },
     {
       "relation": "contains",
@@ -969,9 +1169,9 @@
       "source_file": "src/components/TextPressure.jsx",
       "source_location": "L24",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_components_textpressure_jsx",
-      "target": "components_textpressure_textpressure",
-      "confidence_score": 1.0
+      "target": "components_textpressure_textpressure"
     },
     {
       "relation": "imports_from",
@@ -980,9 +1180,9 @@
       "source_file": "src/pages/Portfolio.jsx",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_pages_portfolio_jsx",
-      "target": "src_components_textpressure_jsx",
-      "confidence_score": 1.0
+      "target": "src_components_textpressure_jsx"
     },
     {
       "relation": "contains",
@@ -990,9 +1190,9 @@
       "source_file": "src/components/SocialIcons.jsx",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_components_socialicons_jsx",
-      "target": "components_socialicons_linkedin",
-      "confidence_score": 1.0
+      "target": "components_socialicons_linkedin"
     },
     {
       "relation": "contains",
@@ -1000,9 +1200,9 @@
       "source_file": "src/components/SocialIcons.jsx",
       "source_location": "L12",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_components_socialicons_jsx",
-      "target": "components_socialicons_facebook",
-      "confidence_score": 1.0
+      "target": "components_socialicons_facebook"
     },
     {
       "relation": "contains",
@@ -1010,9 +1210,9 @@
       "source_file": "src/components/SocialIcons.jsx",
       "source_location": "L47",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_components_socialicons_jsx",
-      "target": "components_socialicons_twitter",
-      "confidence_score": 1.0
+      "target": "components_socialicons_twitter"
     },
     {
       "relation": "imports_from",
@@ -1021,9 +1221,9 @@
       "source_file": "src/pages/Portfolio.jsx",
       "source_location": "L7",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_pages_portfolio_jsx",
-      "target": "src_components_socialicons_jsx",
-      "confidence_score": 1.0
+      "target": "src_components_socialicons_jsx"
     },
     {
       "relation": "imports",
@@ -1032,9 +1232,9 @@
       "source_file": "src/pages/Portfolio.jsx",
       "source_location": "L7",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_pages_portfolio_jsx",
-      "target": "components_socialicons_linkedin",
-      "confidence_score": 1.0
+      "target": "components_socialicons_linkedin"
     },
     {
       "relation": "imports",
@@ -1043,9 +1243,9 @@
       "source_file": "src/pages/Portfolio.jsx",
       "source_location": "L7",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_pages_portfolio_jsx",
-      "target": "components_socialicons_facebook",
-      "confidence_score": 1.0
+      "target": "components_socialicons_facebook"
     },
     {
       "relation": "imports",
@@ -1054,8 +1254,39 @@
       "source_file": "src/pages/Portfolio.jsx",
       "source_location": "L7",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_pages_portfolio_jsx",
-      "target": "components_socialicons_twitter",
+      "target": "components_socialicons_twitter"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/ScrollToTop.jsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "src_components_scrolltotop_jsx",
+      "target": "components_scrolltotop_scrolltotop",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/sections/SocialProof.jsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "src_components_sections_socialproof_jsx",
+      "target": "src_components_scrolltotop_jsx",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/Footer.jsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "src_components_footer_jsx",
+      "target": "components_footer_footer",
       "confidence_score": 1.0
     },
     {
@@ -1064,8 +1295,30 @@
       "source_file": "src/components/sections/Projects.jsx",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_components_sections_projects_jsx",
-      "target": "sections_projects_projects",
+      "target": "sections_projects_projects"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/sections/About.jsx",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "src_components_sections_about_jsx",
+      "target": "src_components_ui_cometcard_jsx",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/sections/About.jsx",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "src_components_sections_about_jsx",
+      "target": "ui_cometcard_cometcard",
       "confidence_score": 1.0
     },
     {
@@ -1074,60 +1327,9 @@
       "source_file": "src/components/sections/About.jsx",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_components_sections_about_jsx",
-      "target": "sections_about_about",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/components/sections/Services.jsx",
-      "source_location": "L4",
-      "weight": 1.0,
-      "source": "src_components_sections_services_jsx",
-      "target": "sections_services_services",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/components/sections/Contact.jsx",
-      "source_location": "L4",
-      "weight": 1.0,
-      "source": "src_components_sections_contact_jsx",
-      "target": "sections_contact_contact",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/components/sections/ByTheNumbers.jsx",
-      "source_location": "L3",
-      "weight": 1.0,
-      "source": "src_components_sections_bythenumbers_jsx",
-      "target": "sections_bythenumbers_bythenumbers",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/pages/Portfolio.jsx",
-      "source_location": "L11",
-      "weight": 1.0,
-      "source": "src_pages_portfolio_jsx",
-      "target": "src_components_sections_bythenumbers_jsx",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/components/sections/MyStory.jsx",
-      "source_location": "L4",
-      "weight": 1.0,
-      "source": "src_components_sections_mystory_jsx",
-      "target": "sections_mystory_mystory",
-      "confidence_score": 1.0
+      "target": "sections_about_about"
     },
     {
       "relation": "imports_from",
@@ -1137,8 +1339,49 @@
       "source_location": "L12",
       "weight": 1.0,
       "source": "src_pages_portfolio_jsx",
-      "target": "src_components_sections_mystory_jsx",
+      "target": "src_components_sections_about_jsx",
       "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/sections/Services.jsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_components_sections_services_jsx",
+      "target": "sections_services_services"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/sections/Contact.jsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_components_sections_contact_jsx",
+      "target": "sections_contact_contact"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/sections/ByTheNumbers.jsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_components_sections_bythenumbers_jsx",
+      "target": "sections_bythenumbers_bythenumbers"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/Portfolio.jsx",
+      "source_location": "L11",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_pages_portfolio_jsx",
+      "target": "src_components_sections_bythenumbers_jsx"
     },
     {
       "relation": "contains",
@@ -1147,8 +1390,18 @@
       "source_location": "L4",
       "weight": 1.0,
       "source": "src_components_sections_proofvault_jsx",
-      "target": "sections_proofvault_proofvault",
+      "target": "sections_proofvault_proofcard",
       "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/sections/ProofVault.jsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_components_sections_proofvault_jsx",
+      "target": "sections_proofvault_proofvault"
     },
     {
       "relation": "imports_from",
@@ -1157,30 +1410,9 @@
       "source_file": "src/pages/Portfolio.jsx",
       "source_location": "L13",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_pages_portfolio_jsx",
-      "target": "src_components_sections_proofvault_jsx",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/components/sections/FeaturedProjects.jsx",
-      "source_location": "L3",
-      "weight": 1.0,
-      "source": "src_components_sections_featuredprojects_jsx",
-      "target": "sections_featuredprojects_featuredprojects",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/pages/Portfolio.jsx",
-      "source_location": "L14",
-      "weight": 1.0,
-      "source": "src_pages_portfolio_jsx",
-      "target": "src_components_sections_featuredprojects_jsx",
-      "confidence_score": 1.0
+      "target": "src_components_sections_proofvault_jsx"
     },
     {
       "relation": "contains",
@@ -1188,8 +1420,71 @@
       "source_file": "src/components/sections/Specializations.jsx",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_components_sections_specializations_jsx",
-      "target": "sections_specializations_specializations",
+      "target": "sections_specializations_specializations"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/Portfolio.jsx",
+      "source_location": "L15",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_pages_portfolio_jsx",
+      "target": "src_components_sections_specializations_jsx"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/sections/SocialProof.jsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_components_sections_socialproof_jsx",
+      "target": "sections_socialproof_socialproof"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/Portfolio.jsx",
+      "source_location": "L16",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_pages_portfolio_jsx",
+      "target": "src_components_sections_socialproof_jsx"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/sections/MyStory.jsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_components_sections_mystory_jsx",
+      "target": "sections_mystory_mystory"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/Portfolio.jsx",
+      "source_location": "L12",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_pages_portfolio_jsx",
+      "target": "src_components_sections_mystory_jsx"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/sections/TechStack.jsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "src_components_sections_techstack_jsx",
+      "target": "sections_techstack_techstack",
       "confidence_score": 1.0
     },
     {
@@ -1200,28 +1495,150 @@
       "source_location": "L15",
       "weight": 1.0,
       "source": "src_pages_portfolio_jsx",
-      "target": "src_components_sections_specializations_jsx",
+      "target": "src_components_sections_techstack_jsx",
       "confidence_score": 1.0
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "src/components/sections/SocialProof.jsx",
+      "source_file": "src/components/ui/BorderGlow.jsx",
       "source_location": "L4",
       "weight": 1.0,
-      "source": "src_components_sections_socialproof_jsx",
-      "target": "sections_socialproof_socialproof",
+      "source": "src_components_ui_borderglow_jsx",
+      "target": "ui_borderglow_parsehsl",
       "confidence_score": 1.0
     },
     {
-      "relation": "imports_from",
-      "context": "import",
+      "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "src/pages/Portfolio.jsx",
-      "source_location": "L16",
+      "source_file": "src/components/ui/BorderGlow.jsx",
+      "source_location": "L10",
       "weight": 1.0,
-      "source": "src_pages_portfolio_jsx",
-      "target": "src_components_sections_socialproof_jsx",
+      "source": "src_components_ui_borderglow_jsx",
+      "target": "ui_borderglow_buildglowvars",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/ui/BorderGlow.jsx",
+      "source_location": "L22",
+      "weight": 1.0,
+      "source": "src_components_ui_borderglow_jsx",
+      "target": "ui_borderglow_gradient_positions",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/ui/BorderGlow.jsx",
+      "source_location": "L23",
+      "weight": 1.0,
+      "source": "src_components_ui_borderglow_jsx",
+      "target": "ui_borderglow_gradient_keys",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/ui/BorderGlow.jsx",
+      "source_location": "L24",
+      "weight": 1.0,
+      "source": "src_components_ui_borderglow_jsx",
+      "target": "ui_borderglow_color_map",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/ui/BorderGlow.jsx",
+      "source_location": "L26",
+      "weight": 1.0,
+      "source": "src_components_ui_borderglow_jsx",
+      "target": "ui_borderglow_buildgradientvars",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/ui/BorderGlow.jsx",
+      "source_location": "L36",
+      "weight": 1.0,
+      "source": "src_components_ui_borderglow_jsx",
+      "target": "ui_borderglow_easeoutcubic",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/ui/BorderGlow.jsx",
+      "source_location": "L37",
+      "weight": 1.0,
+      "source": "src_components_ui_borderglow_jsx",
+      "target": "ui_borderglow_easeincubic",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/ui/BorderGlow.jsx",
+      "source_location": "L39",
+      "weight": 1.0,
+      "source": "src_components_ui_borderglow_jsx",
+      "target": "ui_borderglow_animatevalue",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/ui/BorderGlow.jsx",
+      "source_location": "L51",
+      "weight": 1.0,
+      "source": "src_components_ui_borderglow_jsx",
+      "target": "ui_borderglow_borderglow",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/ui/BorderGlow.jsx",
+      "source_location": "L11",
+      "weight": 1.0,
+      "source": "ui_borderglow_buildglowvars",
+      "target": "ui_borderglow_parsehsl",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/ui/BorderGlow.jsx",
+      "source_location": "L130",
+      "weight": 1.0,
+      "source": "ui_borderglow_borderglow",
+      "target": "ui_borderglow_buildglowvars",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/ui/BorderGlow.jsx",
+      "source_location": "L145",
+      "weight": 1.0,
+      "source": "ui_borderglow_borderglow",
+      "target": "ui_borderglow_buildgradientvars",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/ui/CometCard.jsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "src_components_ui_cometcard_jsx",
+      "target": "ui_cometcard_cometcard",
       "confidence_score": 1.0
     },
     {
@@ -1230,9 +1647,30 @@
       "source_file": "src/pages/Portfolio.jsx",
       "source_location": "L18",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_pages_portfolio_jsx",
-      "target": "pages_portfolio_portfolio",
-      "confidence_score": 1.0
+      "target": "pages_portfolio_rotatingroles"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/Portfolio.jsx",
+      "source_location": "L18",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_pages_portfolio_jsx",
+      "target": "pages_portfolio_portfolio"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/Portfolio.jsx",
+      "source_location": "L14",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_pages_portfolio_jsx",
+      "target": "src_components_sections_featuredprojects_jsx"
     },
     {
       "relation": "contains",
@@ -1240,10 +1678,21 @@
       "source_file": "src/pages/Resume.jsx",
       "source_location": "L6",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_pages_resume_jsx",
-      "target": "pages_resume_resume",
-      "confidence_score": 1.0
+      "target": "pages_resume_resume"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/sections/FeaturedProjects.jsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_components_sections_featuredprojects_jsx",
+      "target": "sections_featuredprojects_featuredprojects"
     }
   ],
-  "hyperedges": []
+  "hyperedges": [],
+  "built_at_commit": "413ab7a65f7340f807201461ba0d5455b5621288"
 }

@@ -1,7 +1,7 @@
 {
   "F:\\Ashton Kitt Portfolio\\package.json": {
-    "mtime": 1781380820.0,
-    "ast_hash": "c1930f5829e6cb61f39348160c497d1d",
+    "mtime": 1781470512.0,
+    "ast_hash": "3f334e4896fa87b282a948ca57360093",
     "semantic_hash": ""
   },
   "F:\\Ashton Kitt Portfolio\\vite.config.js": {
@@ -40,8 +40,8 @@
     "semantic_hash": ""
   },
   "F:\\Ashton Kitt Portfolio\\src\\components\\SmoothCursor.jsx": {
-    "mtime": 1781391536.0,
-    "ast_hash": "679a3cd5d38b5bd18c85fac3891e3181",
+    "mtime": 1781556026.0,
+    "ast_hash": "08decb897c7eb10f4c0e80371d5aacf3",
     "semantic_hash": ""
   },
   "F:\\Ashton Kitt Portfolio\\src\\components\\LiquidEther.jsx": {
@@ -50,8 +50,8 @@
     "semantic_hash": ""
   },
   "F:\\Ashton Kitt Portfolio\\src\\components\\TextPressure.jsx": {
-    "mtime": 1781407578.0,
-    "ast_hash": "d7524fe2d2c70f6d508365d2973a637f",
+    "mtime": 1781472596.0,
+    "ast_hash": "47748137022a3f583761d17ce0fab61a",
     "semantic_hash": ""
   },
   "F:\\Ashton Kitt Portfolio\\src\\components\\SocialIcons.jsx": {
@@ -65,8 +65,8 @@
     "semantic_hash": ""
   },
   "F:\\Ashton Kitt Portfolio\\src\\components\\sections\\About.jsx": {
-    "mtime": 1781313524.0,
-    "ast_hash": "9ccb9d6c52581bd4ea1209894d10cdfe",
+    "mtime": 1781551346.0,
+    "ast_hash": "fb6978b210b5b468e6bc883a9d41ef65",
     "semantic_hash": ""
   },
   "F:\\Ashton Kitt Portfolio\\src\\components\\sections\\Services.jsx": {
@@ -80,48 +80,43 @@
     "semantic_hash": ""
   },
   "F:\\Ashton Kitt Portfolio\\src\\components\\sections\\ByTheNumbers.jsx": {
-    "mtime": 1781389562.0,
-    "ast_hash": "3d059fc74fea14fd853216da1a370b7b",
+    "mtime": 1781488890.0,
+    "ast_hash": "2da8545a7f4dd6a6375fd2138ec008d1",
     "semantic_hash": ""
   },
   "F:\\Ashton Kitt Portfolio\\src\\components\\sections\\MyStory.jsx": {
-    "mtime": 1781414348.0,
-    "ast_hash": "61cbaad524e9aa1380c9f807079ca87d",
+    "mtime": 1781552814.0,
+    "ast_hash": "ae231150971b8792dce5d18d114bdb8f",
     "semantic_hash": ""
   },
   "F:\\Ashton Kitt Portfolio\\src\\components\\sections\\ProofVault.jsx": {
-    "mtime": 1781389976.0,
-    "ast_hash": "bdfc67acb9c3d4eecb54081fa1ae1941",
-    "semantic_hash": ""
-  },
-  "F:\\Ashton Kitt Portfolio\\src\\components\\sections\\FeaturedProjects.jsx": {
-    "mtime": 1781389962.0,
-    "ast_hash": "873ef42331f580f0e0dadda8996d8c73",
+    "mtime": 1781495978.0,
+    "ast_hash": "6cd1942822f68a1ac6d2d205077bcd78",
     "semantic_hash": ""
   },
   "F:\\Ashton Kitt Portfolio\\src\\components\\sections\\Specializations.jsx": {
-    "mtime": 1781389952.0,
-    "ast_hash": "8e99ac50e01b461a5fea8e98d89d5339",
+    "mtime": 1781555464.0,
+    "ast_hash": "3d3901d88264c82216ff0e12101e9002",
     "semantic_hash": ""
   },
   "F:\\Ashton Kitt Portfolio\\src\\components\\sections\\SocialProof.jsx": {
-    "mtime": 1781382942.0,
-    "ast_hash": "80c8935a972950159cb177ec73c94a23",
+    "mtime": 1781563234.0,
+    "ast_hash": "537f658c5e5994367aebd9420e103d66",
     "semantic_hash": ""
   },
   "F:\\Ashton Kitt Portfolio\\src\\pages\\Portfolio.jsx": {
-    "mtime": 1781407642.0,
-    "ast_hash": "e6a081d4fe15ccb695dbb5bd323d917c",
+    "mtime": 1781563226.0,
+    "ast_hash": "662fa0e15256ec866ed5dcf391894c59",
     "semantic_hash": ""
   },
   "F:\\Ashton Kitt Portfolio\\src\\pages\\Resume.jsx": {
-    "mtime": 1781391346.0,
-    "ast_hash": "371dddb11573c6a3bac338a78a5c41df",
+    "mtime": 1781480968.0,
+    "ast_hash": "a3d36ac63a6cb6520e0cdf3377bd7c03",
     "semantic_hash": ""
   },
   "F:\\Ashton Kitt Portfolio\\index.html": {
-    "mtime": 1781393786.0,
-    "ast_hash": "6e02e140aaf9a9a00a8bcc731df08b29",
+    "mtime": 1781472444.0,
+    "ast_hash": "fed13c4103c6417df025520c6efd1336",
     "semantic_hash": ""
   },
   "F:\\Ashton Kitt Portfolio\\public\\favicon.svg": {
@@ -202,6 +197,96 @@
   "F:\\Ashton Kitt Portfolio\\src\\assets\\vite.svg": {
     "mtime": 1781299140.0,
     "ast_hash": "9960a24288958394ac50e57ff638b036",
+    "semantic_hash": ""
+  },
+  "F:\\Ashton Kitt Portfolio\\src\\components\\ScrollToTop.jsx": {
+    "mtime": 1781563328.0,
+    "ast_hash": "e4c0eca3942300ee58b136092f5780e9",
+    "semantic_hash": ""
+  },
+  "F:\\Ashton Kitt Portfolio\\src\\components\\Footer.jsx": {
+    "mtime": 1781557092.0,
+    "ast_hash": "4b710fb4d55f1580c32aeeea5f7cd51e",
+    "semantic_hash": ""
+  },
+  "F:\\Ashton Kitt Portfolio\\src\\components\\sections\\TechStack.jsx": {
+    "mtime": 1781554872.0,
+    "ast_hash": "16d2fdad338a0378482450f516149a99",
+    "semantic_hash": ""
+  },
+  "F:\\Ashton Kitt Portfolio\\src\\components\\ui\\BorderGlow.jsx": {
+    "mtime": 1781486438.0,
+    "ast_hash": "994c77f4ba5ebc420bd7ac958f86a3d2",
+    "semantic_hash": ""
+  },
+  "F:\\Ashton Kitt Portfolio\\src\\components\\ui\\CometCard.jsx": {
+    "mtime": 1781491340.0,
+    "ast_hash": "49eb1cc69fe311587dac58ff51c79820",
+    "semantic_hash": ""
+  },
+  "F:\\Ashton Kitt Portfolio\\temp_about.txt": {
+    "mtime": 1781489700.0,
+    "ast_hash": "327235b4f291ad829f1338b28f3571c6",
+    "semantic_hash": ""
+  },
+  "F:\\Ashton Kitt Portfolio\\public\\web3-1.png": {
+    "mtime": 1781481656.0,
+    "ast_hash": "99695204390034600d1d255465a30467",
+    "semantic_hash": ""
+  },
+  "F:\\Ashton Kitt Portfolio\\public\\web3-2.png": {
+    "mtime": 1781481656.0,
+    "ast_hash": "76686d55af14ab23a2e870e7695b59a0",
+    "semantic_hash": ""
+  },
+  "F:\\Ashton Kitt Portfolio\\public\\web3-3.png": {
+    "mtime": 1781481656.0,
+    "ast_hash": "6add4ddcb3046ffb5bda023ff421c466",
+    "semantic_hash": ""
+  },
+  "F:\\Ashton Kitt Portfolio\\public\\web3-4.png": {
+    "mtime": 1781481656.0,
+    "ast_hash": "fb320d22fd605d05e829fd2894fdcdf8",
+    "semantic_hash": ""
+  },
+  "F:\\Ashton Kitt Portfolio\\public\\ecom-revenue.jpg": {
+    "mtime": 1781484440.0,
+    "ast_hash": "ce41261851d1626edaee2b8c2814cd74",
+    "semantic_hash": ""
+  },
+  "F:\\Ashton Kitt Portfolio\\public\\solar-sense.png": {
+    "mtime": 1781484848.0,
+    "ast_hash": "da01f1158db3b194265cf5513f336711",
+    "semantic_hash": ""
+  },
+  "F:\\Ashton Kitt Portfolio\\public\\b2b-community.png": {
+    "mtime": 1781484928.0,
+    "ast_hash": "c7b5b3d76f1671c2f3fbb54c5c3a7e27",
+    "semantic_hash": ""
+  },
+  "F:\\Ashton Kitt Portfolio\\public\\web3-cover.png": {
+    "mtime": 1781484994.0,
+    "ast_hash": "fbd99877dfb580f38d100ebe6524f6e8",
+    "semantic_hash": ""
+  },
+  "F:\\Ashton Kitt Portfolio\\public\\crm-automation.png": {
+    "mtime": 1781485810.0,
+    "ast_hash": "404644d9ca844f204e9e84433e0539e3",
+    "semantic_hash": ""
+  },
+  "F:\\Ashton Kitt Portfolio\\public\\ac-wrapss.png": {
+    "mtime": 1781486342.0,
+    "ast_hash": "8124528c7a434585baa6b7e8e64d39f6",
+    "semantic_hash": ""
+  },
+  "F:\\Ashton Kitt Portfolio\\public\\ashton-about.jpg": {
+    "mtime": 1781489798.0,
+    "ast_hash": "b52f36368aab15f315c738b226087e9e",
+    "semantic_hash": ""
+  },
+  "F:\\Ashton Kitt Portfolio\\public\\profile.jpg": {
+    "mtime": 1781557624.0,
+    "ast_hash": "f45f1e51780d578e0401e1bd5a5af6c5",
     "semantic_hash": ""
   }
 }

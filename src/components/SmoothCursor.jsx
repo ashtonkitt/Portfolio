@@ -13,7 +13,7 @@ export default function SmoothCursor() {
         const isLightArea = e.target.closest('.side-right, .main-content, .resume-page');
         
         // Determine if we are hovering over a dark button/element within a light area
-        const isDarkElement = e.target.closest('.cert-tag, .filter-btn.active, .timeline-dot');
+        const isDarkElement = e.target.closest('.cert-tag, .filter-btn.active, .timeline-dot, .scroll-to-top-btn');
         
         if (isLightArea && !isDarkElement) {
           cursorRef.current.style.backgroundColor = 'var(--text-dark)';
