@@ -5,10 +5,14 @@ import App from './App.jsx'
 import './style.css'
 import './style-wireframes.css'
 
+import { StaticModeProvider } from './context/StaticModeContext.jsx'
+
 ReactDOM.createRoot(document.getElementById('app')).render(
   <React.StrictMode>
     <BrowserRouter>
-      <App />
+      <StaticModeProvider>
+        <App />
+      </StaticModeProvider>
     </BrowserRouter>
   </React.StrictMode>,
 )

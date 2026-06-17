@@ -77,8 +77,8 @@ function SocialProof() {
                 <a href="mailto:ashtonkits@gmail.com" className="contact-link-item">
                   ashtonkits@gmail.com
                 </a>
-                <a href="https://www.linkedin.com/in/ashton-kitt-3326b9236/" target="_blank" rel="noreferrer" className="contact-link-item">
-                  linkedin.com/in/ashton-kitt
+                <a href="https://www.linkedin.com/in/ashtonkitt/" target="_blank" rel="noreferrer" className="contact-link-item">
+                  linkedin.com/in/ashtonkitt
                 </a>
               </div>
             </div>

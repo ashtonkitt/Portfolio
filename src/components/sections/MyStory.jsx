@@ -211,12 +211,25 @@ function MyStory() {
   const [activeIndex, setActiveIndex] = useState(0);
   
   useMotionValueEvent(scrollYProgress, "change", (latest) => {
-    // Map 0-1 progress to the array index
-    const newIndex = Math.round(latest * (storyEvents.length - 1));
-    setActiveIndex(newIndex);
+    // Only use vertical scroll progress for active index on desktop
+    if (window.innerWidth > 992) {
+      const newIndex = Math.round(latest * (storyEvents.length - 1));
+      setActiveIndex(newIndex);
+    }
   });
 
   const scrollToCard = (index) => {
+    if (window.innerWidth <= 992) {
+      // Mobile horizontal scroll
+      const container = document.querySelector('.horizontal-map');
+      if (container) {
+        const cardWidth = window.innerWidth * 0.8 + 20; // width + gap
+        container.scrollTo({ left: index * cardWidth, behavior: 'smooth' });
+        setActiveIndex(index);
+      }
+      return;
+    }
+
     if (!targetRef.current) return;
     // Calculate absolute position on the document
     const rect = targetRef.current.getBoundingClientRect();
@@ -229,6 +242,13 @@ function MyStory() {
       top: scrollTarget,
       behavior: 'smooth'
     });
+  };
+
+  const scrollMobileTo = (direction) => {
+    const newIndex = direction === 'next' ? activeIndex + 1 : activeIndex - 1;
+    if (newIndex >= 0 && newIndex < storyEvents.length) {
+      scrollToCard(newIndex);
+    }
   };
 
   // JS Scroll Snapping for the timeline - Re-added with longer timeout for smoothness
@@ -250,6 +270,9 @@ function MyStory() {
           
           const scrollDistanceIntoSection = currentScroll - sectionTop;
           const nearestIndex = Math.round(scrollDistanceIntoSection / windowSize.height);
+          
+          // Disable JS snapping on mobile where we use CSS horizontal scroll snapping
+          if (window.innerWidth <= 992) return;
           
           // Clamp index to available cards
           const safeIndex = Math.max(0, Math.min(nearestIndex, storyEvents.length - 1));
@@ -279,7 +302,30 @@ function MyStory() {
       <div className="sticky-container">
         <h2 className="section-title" style={{ position: 'absolute', top: 'clamp(10px, 3vh, 40px)', left: '0', width: '100%', textAlign: 'center', zIndex: 10, margin: 0, fontSize: 'clamp(2rem, 6vh, 3rem)' }}>MY JOURNEY</h2>
         
-        <motion.div className="horizontal-map" style={{ width: `${TOTAL_WIDTH}px`, x: xTransform }}>
+        {/* Mobile Navigation Arrows */}
+        {activeIndex > 0 && (
+          <button className="mobile-nav-arrow arrow-prev" onClick={() => scrollMobileTo('prev')}>
+            &larr;
+          </button>
+        )}
+        {activeIndex < storyEvents.length - 1 && (
+          <button className="mobile-nav-arrow arrow-next" onClick={() => scrollMobileTo('next')}>
+            &rarr;
+          </button>
+        )}
+
+        <motion.div 
+          className="horizontal-map" 
+          style={{ width: `${TOTAL_WIDTH}px`, x: xTransform }}
+          onScroll={(e) => {
+            if (window.innerWidth <= 992) {
+              const scrollLeft = e.target.scrollLeft;
+              const cardWidth = window.innerWidth * 0.8;
+              const index = Math.round(scrollLeft / cardWidth);
+              setActiveIndex(Math.max(0, Math.min(index, storyEvents.length - 1)));
+            }
+          }}
+        >
           
           <div className="map-svg-container">
             <svg viewBox={`0 0 ${TOTAL_WIDTH} ${windowSize.height}`} className="circuit-board-svg">

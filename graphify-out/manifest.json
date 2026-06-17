@@ -40,8 +40,8 @@
     "semantic_hash": ""
   },
   "F:\\Ashton Kitt Portfolio\\src\\components\\SmoothCursor.jsx": {
-    "mtime": 1781556026.0,
-    "ast_hash": "08decb897c7eb10f4c0e80371d5aacf3",
+    "mtime": 1781589884.0,
+    "ast_hash": "4adfa17a43fced19740d495d019ce83b",
     "semantic_hash": ""
   },
   "F:\\Ashton Kitt Portfolio\\src\\components\\LiquidEther.jsx": {
@@ -85,13 +85,13 @@
     "semantic_hash": ""
   },
   "F:\\Ashton Kitt Portfolio\\src\\components\\sections\\MyStory.jsx": {
-    "mtime": 1781552814.0,
-    "ast_hash": "ae231150971b8792dce5d18d114bdb8f",
+    "mtime": 1781589884.0,
+    "ast_hash": "19b6d5878675e1cc236e7236e73029e7",
     "semantic_hash": ""
   },
   "F:\\Ashton Kitt Portfolio\\src\\components\\sections\\ProofVault.jsx": {
-    "mtime": 1781495978.0,
-    "ast_hash": "6cd1942822f68a1ac6d2d205077bcd78",
+    "mtime": 1781589884.0,
+    "ast_hash": "f72434a44ed584ad148ab8261bd53314",
     "semantic_hash": ""
   },
   "F:\\Ashton Kitt Portfolio\\src\\components\\sections\\Specializations.jsx": {
@@ -105,8 +105,8 @@
     "semantic_hash": ""
   },
   "F:\\Ashton Kitt Portfolio\\src\\pages\\Portfolio.jsx": {
-    "mtime": 1781563226.0,
-    "ast_hash": "662fa0e15256ec866ed5dcf391894c59",
+    "mtime": 1781589884.0,
+    "ast_hash": "d731dd9d6be6e075c6a467f96c2af512",
     "semantic_hash": ""
   },
   "F:\\Ashton Kitt Portfolio\\src\\pages\\Resume.jsx": {
@@ -115,8 +115,8 @@
     "semantic_hash": ""
   },
   "F:\\Ashton Kitt Portfolio\\index.html": {
-    "mtime": 1781472444.0,
-    "ast_hash": "fed13c4103c6417df025520c6efd1336",
+    "mtime": 1781589884.0,
+    "ast_hash": "8bbe45e94d52a552b40b75de18d15ce4",
     "semantic_hash": ""
   },
   "F:\\Ashton Kitt Portfolio\\public\\favicon.svg": {
@@ -287,6 +287,171 @@
   "F:\\Ashton Kitt Portfolio\\public\\profile.jpg": {
     "mtime": 1781557624.0,
     "ast_hash": "f45f1e51780d578e0401e1bd5a5af6c5",
+    "semantic_hash": ""
+  },
+  "F:\\Ashton Kitt Portfolio\\src\\components\\MatrixBackground.jsx": {
+    "mtime": 1781567924.0,
+    "ast_hash": "c4edece3b6b1852f0a244b0e342e69c8",
+    "semantic_hash": ""
+  },
+  "F:\\Ashton Kitt Portfolio\\public\\agency1.png": {
+    "mtime": 1781565264.0,
+    "ast_hash": "fce3a77cd518b48d5d55168da85571b3",
+    "semantic_hash": ""
+  },
+  "F:\\Ashton Kitt Portfolio\\public\\agency2.png": {
+    "mtime": 1781565274.0,
+    "ast_hash": "0654e5a664bee049d4d4ecb0fec32878",
+    "semantic_hash": ""
+  },
+  "F:\\Ashton Kitt Portfolio\\public\\agency3.png": {
+    "mtime": 1781565282.0,
+    "ast_hash": "dc62350f54c5e5c247a6c508e80077cb",
+    "semantic_hash": ""
+  },
+  "F:\\Ashton Kitt Portfolio\\public\\agency4.png": {
+    "mtime": 1781565290.0,
+    "ast_hash": "b42e0cddc59575700b4686ca7e398644",
+    "semantic_hash": ""
+  },
+  "F:\\Ashton Kitt Portfolio\\public\\favicon-hero.png": {
+    "mtime": 1781565718.0,
+    "ast_hash": "22d3e439eb141a8d9b46b2054b23f2a7",
+    "semantic_hash": ""
+  },
+  "F:\\Ashton Kitt Portfolio\\public\\jubilee-master.jpg": {
+    "mtime": 1781569714.0,
+    "ast_hash": "2af7e27d8d9560163af94867505f4d59",
+    "semantic_hash": ""
+  },
+  "F:\\Ashton Kitt Portfolio\\public\\em-construction.png": {
+    "mtime": 1781573576.0,
+    "ast_hash": "d18264729bccd0dbf0f3b837bba502f8",
+    "semantic_hash": ""
+  },
+  "F:\\Ashton Kitt Portfolio\\public\\ebook-automation.png": {
+    "mtime": 1781582862.0,
+    "ast_hash": "e09e610a58e78d493cbf5dd0206f16b5",
+    "semantic_hash": ""
+  },
+  "F:\\Ashton Kitt Portfolio\\public\\travel-reel.jpg": {
+    "mtime": 1781582992.0,
+    "ast_hash": "a654a2089d92e26e7a735d2bad62efa2",
+    "semantic_hash": ""
+  },
+  "F:\\Ashton Kitt Portfolio\\public\\travel-reel-60k.jpg": {
+    "mtime": 1781583026.0,
+    "ast_hash": "1d2a46b644f11f523e676d6838241075",
+    "semantic_hash": ""
+  },
+  "F:\\Ashton Kitt Portfolio\\public\\berkshire-funnel.jpg": {
+    "mtime": 1781583086.0,
+    "ast_hash": "ce4a721d1fdfd936af06f320122d190c",
+    "semantic_hash": ""
+  },
+  "F:\\Ashton Kitt Portfolio\\public\\huberman-funnel.jpg": {
+    "mtime": 1781583130.0,
+    "ast_hash": "93952ef672a223fb35c86cb7a60192f5",
+    "semantic_hash": ""
+  },
+  "F:\\Ashton Kitt Portfolio\\public\\five-boroughs-funnel.jpg": {
+    "mtime": 1781583248.0,
+    "ast_hash": "b1e2d53c16a7c036514af955161ceef8",
+    "semantic_hash": ""
+  },
+  "F:\\Ashton Kitt Portfolio\\public\\beyond-carrier-funnel.jpg": {
+    "mtime": 1781584558.0,
+    "ast_hash": "ec65086a766b8c77c4d8c04318ad408f",
+    "semantic_hash": ""
+  },
+  "F:\\Ashton Kitt Portfolio\\public\\nadya-mazeli-funnel.jpg": {
+    "mtime": 1781584558.0,
+    "ast_hash": "4c7bd4aeba93b5a3b2faa14948c70758",
+    "semantic_hash": ""
+  },
+  "F:\\Ashton Kitt Portfolio\\public\\asset-realty-funnel.jpg": {
+    "mtime": 1781584558.0,
+    "ast_hash": "776fd5a650d33ae11cab53517989d141",
+    "semantic_hash": ""
+  },
+  "F:\\Ashton Kitt Portfolio\\public\\brittney-batla-funnel.jpg": {
+    "mtime": 1781584558.0,
+    "ast_hash": "cacbe6d6c767aeddd630fdf77edaa5db",
+    "semantic_hash": ""
+  },
+  "F:\\Ashton Kitt Portfolio\\public\\paww-international.jpg": {
+    "mtime": 1781584558.0,
+    "ast_hash": "0115693a3b953f8bd620ab38b6ba0bef",
+    "semantic_hash": ""
+  },
+  "F:\\Ashton Kitt Portfolio\\public\\revenue-8k.png": {
+    "mtime": 1781584644.0,
+    "ast_hash": "e0117af0bd5fa72518d7f377d9718bcb",
+    "semantic_hash": ""
+  },
+  "F:\\Ashton Kitt Portfolio\\public\\revenue-54k.png": {
+    "mtime": 1781584644.0,
+    "ast_hash": "2f7a065202e0c0d2919fc6ecbc1d87e1",
+    "semantic_hash": ""
+  },
+  "F:\\Ashton Kitt Portfolio\\public\\tree-removal-sacramento.png": {
+    "mtime": 1781585524.0,
+    "ast_hash": "ff2f9e6eb9585cc0d8b7f46fd5a00926",
+    "semantic_hash": ""
+  },
+  "F:\\Ashton Kitt Portfolio\\public\\pristine-shine-cleaning.png": {
+    "mtime": 1781585524.0,
+    "ast_hash": "d7f7448b6aa3dd3f4d930da4eaabf34c",
+    "semantic_hash": ""
+  },
+  "F:\\Ashton Kitt Portfolio\\public\\longmont-peak-dentistry.jpg": {
+    "mtime": 1781585524.0,
+    "ast_hash": "f3e1b37785ec8346ab80ff98c3ee2eb1",
+    "semantic_hash": ""
+  },
+  "F:\\Ashton Kitt Portfolio\\public\\california-plumbing.jpg": {
+    "mtime": 1781585524.0,
+    "ast_hash": "2bbe4e32d1130b7beb414696a6cd68ff",
+    "semantic_hash": ""
+  },
+  "F:\\Ashton Kitt Portfolio\\public\\austin-legal-team.jpg": {
+    "mtime": 1781585524.0,
+    "ast_hash": "c446774fd787dfe74aa5792fa581d300",
+    "semantic_hash": ""
+  },
+  "F:\\Ashton Kitt Portfolio\\public\\kits-branding.jpg": {
+    "mtime": 1781585846.0,
+    "ast_hash": "7670cb201df1d4a00c8e04799ab85dc9",
+    "semantic_hash": ""
+  },
+  "F:\\Ashton Kitt Portfolio\\public\\ac-wraps-branding.png": {
+    "mtime": 1781585954.0,
+    "ast_hash": "74f9f773343201b17a6f87ebaa12fce0",
+    "semantic_hash": ""
+  },
+  "F:\\Ashton Kitt Portfolio\\public\\seo-map-pack.jpg": {
+    "mtime": 1781586014.0,
+    "ast_hash": "bdf5ef77c20f36a69d66484c9cacac05",
+    "semantic_hash": ""
+  },
+  "F:\\Ashton Kitt Portfolio\\public\\pristine-shine-card.png": {
+    "mtime": 1781586086.0,
+    "ast_hash": "ff49734c19930797442379a57a97a1fd",
+    "semantic_hash": ""
+  },
+  "F:\\Ashton Kitt Portfolio\\public\\capital-tree-card.png": {
+    "mtime": 1781586264.0,
+    "ast_hash": "d3dd0deaa2c1d55bbe6b66b602d99698",
+    "semantic_hash": ""
+  },
+  "F:\\Ashton Kitt Portfolio\\public\\seo-lighthouse.jpg": {
+    "mtime": 1781586388.0,
+    "ast_hash": "2738d62e7432dbd39cf521e46f62e7b6",
+    "semantic_hash": ""
+  },
+  "F:\\Ashton Kitt Portfolio\\public\\kangarieux-branding.png": {
+    "mtime": 1781586558.0,
+    "ast_hash": "211b526972b5e2fd2bd42808ad486357",
     "semantic_hash": ""
   }
 }

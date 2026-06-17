@@ -27,6 +27,24 @@ const About = () => {
           <p className="lead-text">
             I'm a growth-focused marketing strategist and systems builder with over 10 years of experience engineering customer acquisition engines.
           </p>
+          
+          <div className="mobile-only-about-image">
+            <CometCard>
+              <img 
+                src="/ashton-about.jpg" 
+                alt="Ashton Kitt" 
+                style={{ 
+                  width: '100%', 
+                  height: '350px', 
+                  objectFit: 'cover', 
+                  borderRadius: '20px',
+                  boxShadow: "rgba(0, 0, 0, 0.1) 0px 10px 30px 0px",
+                  marginBottom: '20px'
+                }} 
+              />
+            </CometCard>
+          </div>
+
           <p>
             I specialize in designing conversion-focused websites, deploying CRM automations, and executing omni-channel acquisition strategies that turn attention into measurable revenue.
           </p>
@@ -51,7 +69,7 @@ const About = () => {
           </div>
         </div>
         
-        <div className="about-image-placeholder" style={{ flexDirection: 'column', gap: '15px', height: 'auto' }}>
+        <div className="about-image-placeholder desktop-only-about-image" style={{ flexDirection: 'column', gap: '15px', height: 'auto' }}>
           <div style={{ width: '100%', height: '420px' }}>
             <CometCard>
               <img 

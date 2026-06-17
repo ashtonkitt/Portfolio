@@ -3,9 +3,12 @@ import TextPressure from '../components/TextPressure';
 import MagneticButton from '../components/MagneticButton';
 import LiquidEther from '../components/LiquidEther';
 import SmoothCursor from '../components/SmoothCursor';
+import MatrixBackground from '../components/MatrixBackground';
 import { Link } from 'react-router-dom';
 import { LinkedIn, Facebook, Twitter } from '../components/SocialIcons';
-import { Mail } from 'lucide-react';
+import { Mail, Menu, X } from 'lucide-react';
+import StaticToggle from '../components/StaticToggle';
+import { useStaticMode } from '../context/StaticModeContext';
 
 // New sections
 import ByTheNumbers from '../components/sections/ByTheNumbers';
@@ -56,30 +59,53 @@ const RotatingRoles = () => {
 };
 
 function Portfolio() {
+  const { isStatic } = useStaticMode();
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   return (
     <>
-      <SmoothCursor />
-      <div className="split-layout">
-        <div style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', zIndex: 0, pointerEvents: 'none' }}>
-          <LiquidEther
-            colors={['#B75818', '#E26E21', '#E88C4F']}
-            mouseForce={15}
-            cursorSize={150}
-            isViscous={true}
-            viscous={30}
-            iterationsViscous={12}
-            iterationsPoisson={12}
-            resolution={0.25}
-            isBounce={false}
-            autoDemo
-            autoSpeed={0.3}
-            autoIntensity={1.2}
-            takeoverDuration={0.25}
-            autoResumeDelay={3000}
-            autoRampDuration={0.6}
-          />
+      {!isStatic && <SmoothCursor />}
+      
+      {/* Mobile Hamburger Overlay */}
+      {isMobileMenuOpen && (
+        <div className="mobile-menu-overlay">
+          <div className="mobile-menu-header">
+            <div className="spacer"></div>
+            <button className="mobile-menu-close" onClick={() => setIsMobileMenuOpen(false)}>
+              <X size={32} color="#fff" />
+            </button>
+          </div>
+          <nav className="mobile-menu-nav">
+            <a href="#proof" onClick={() => setIsMobileMenuOpen(false)}>PROOF</a>
+            <a href="#tech-stack" onClick={() => setIsMobileMenuOpen(false)}>TECH STACK</a>
+            <Link to="/resume" onClick={() => setIsMobileMenuOpen(false)}>RESUME</Link>
+            <a href="#story" onClick={() => setIsMobileMenuOpen(false)}>TIMELINE</a>
+          </nav>
         </div>
+      )}
+
+      <div className="split-layout">
+        {!isStatic && (
+          <div style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', zIndex: 0, pointerEvents: 'none' }}>
+            <LiquidEther
+              colors={['#B75818', '#E26E21', '#E88C4F']}
+              mouseForce={15}
+              cursorSize={150}
+              isViscous={true}
+              viscous={30}
+              iterationsViscous={12}
+              iterationsPoisson={12}
+              resolution={0.25}
+              isBounce={false}
+              autoDemo
+              autoSpeed={0.3}
+              autoIntensity={1.2}
+              takeoverDuration={0.25}
+              autoResumeDelay={3000}
+              autoRampDuration={0.6}
+            />
+          </div>
+        )}
         
         <div className="scroll-indicator">
           <span>Scroll</span>
@@ -95,7 +121,7 @@ function Portfolio() {
               <a href="https://www.facebook.com/ashtonkxtt/" target="_blank" rel="noreferrer" style={{ color: '#fff', opacity: 0.8, transition: 'transform 0.2s, opacity 0.2s', width: '24px', height: '24px', display: 'flex' }} onMouseEnter={e => { e.currentTarget.style.opacity = 1; e.currentTarget.style.transform = 'scale(1.1)'; }} onMouseLeave={e => { e.currentTarget.style.opacity = 0.8; e.currentTarget.style.transform = 'scale(1)'; }}>
                 <Facebook width="100%" height="100%" />
               </a>
-              <a href="https://www.linkedin.com/in/ashton-kitt-3326b9236/" target="_blank" rel="noreferrer" style={{ color: '#fff', opacity: 0.8, transition: 'transform 0.2s, opacity 0.2s', width: '24px', height: '24px', display: 'flex' }} onMouseEnter={e => { e.currentTarget.style.opacity = 1; e.currentTarget.style.transform = 'scale(1.1)'; }} onMouseLeave={e => { e.currentTarget.style.opacity = 0.8; e.currentTarget.style.transform = 'scale(1)'; }}>
+              <a href="https://www.linkedin.com/in/ashtonkitt/" target="_blank" rel="noreferrer" style={{ color: '#fff', opacity: 0.8, transition: 'transform 0.2s, opacity 0.2s', width: '24px', height: '24px', display: 'flex' }} onMouseEnter={e => { e.currentTarget.style.opacity = 1; e.currentTarget.style.transform = 'scale(1.1)'; }} onMouseLeave={e => { e.currentTarget.style.opacity = 0.8; e.currentTarget.style.transform = 'scale(1)'; }}>
                 <LinkedIn width="100%" height="100%" />
               </a>
               <a href="https://x.com/kitsinc" target="_blank" rel="noreferrer" style={{ color: '#fff', opacity: 0.8, transition: 'transform 0.2s, opacity 0.2s', width: '24px', height: '24px', display: 'flex' }} onMouseEnter={e => { e.currentTarget.style.opacity = 1; e.currentTarget.style.transform = 'scale(1.1)'; }} onMouseLeave={e => { e.currentTarget.style.opacity = 0.8; e.currentTarget.style.transform = 'scale(1)'; }}>
@@ -108,32 +134,42 @@ function Portfolio() {
             
             <div className="hero-text">
               <div className="huge-title-container" style={{ width: '85%', position: 'relative', marginBottom: '20px', marginTop: '8px' }}>
-                <TextPressure
-                  text="ASHTON KITT"
-                  fontFamily='"Bricolage Grotesque", sans-serif'
-                  fontUrl={false}
-                  flex={true}
-                  alpha={false}
-                  stroke={false}
-                  width={true}
-                  weight={true}
-                  italic={false} /* Bricolage does not have ital axis on Google Fonts by default */
-                  scale={false}
-                  textColor="#ffffff"
-                  minFontSize={36}
-                  minWdth={75}
-                  maxWdth={100}
-                  minWght={200}
-                  maxWght={800}
-                />
+                {!isStatic ? (
+                  <TextPressure
+                    text="ASHTON KITT"
+                    fontFamily='"Bricolage Grotesque", sans-serif'
+                    fontUrl={false}
+                    flex={true}
+                    alpha={false}
+                    stroke={false}
+                    width={true}
+                    weight={true}
+                    italic={false}
+                    scale={false}
+                    textColor="#ffffff"
+                    minFontSize={36}
+                    minWdth={75}
+                    maxWdth={100}
+                    minWght={200}
+                    maxWght={800}
+                  />
+                ) : (
+                  <h1 className="huge-title-static" style={{ margin: 0, fontFamily: '"Bricolage Grotesque", sans-serif', fontSize: '6rem', fontWeight: 800, lineHeight: 0.9, letterSpacing: '-2px' }}>
+                    ASHTON KITT
+                  </h1>
+                )}
               </div>
               <p className="subtitle">I Build Revenue-Generating Marketing Systems.<br/>Websites • Funnels • CRM • Automation • SEO</p>
               <MagneticButton className="magnetic-button-container">
-                <a href="#proof" className="view-work-btn">VIEW PROOF ↗</a>
+                <Link to="/resume" className="view-work-btn">VIEW RESUME ↗</Link>
               </MagneticButton>
             </div>
 
             <div className="trusted-by">
+              <div className="mobile-only-availability">
+                <div className="dot" style={{ backgroundColor: '#fff' }}></div>
+                <span>AVAILABLE FOR FREELANCE</span>
+              </div>
               <div className="avatars">
                 <img src="/profile.png" alt="User 1" />
                 <img src="/profile.png" alt="User 2" />
@@ -143,6 +179,12 @@ function Portfolio() {
               </div>
               <p>Trusted by forward-thinking brands worldwide.</p>
             </div>
+            
+            {/* Mobile Hamburger Button (Hidden on Desktop) */}
+            <button className="mobile-hamburger-btn" onClick={() => setIsMobileMenuOpen(true)}>
+              <Menu size={28} color="#fff" />
+            </button>
+
           </div>
         </div>
 
@@ -155,13 +197,7 @@ function Portfolio() {
               <Link to="/resume">RESUME</Link>
               <a href="#story">TIMELINE</a>
             </nav>
-            <button className="menu-btn">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                <line x1="3" y1="12" x2="21" y2="12"></line>
-                <line x1="3" y1="6" x2="21" y2="6"></line>
-                <line x1="3" y1="18" x2="21" y2="18"></line>
-              </svg>
-            </button>
+            <StaticToggle />
           </div>
 
           <div className="right-content">
@@ -192,13 +228,40 @@ function Portfolio() {
       </div>
 
       <main className="main-content">
+        {/* Mobile Testimonial Below Hero */}
+        <div className="mobile-testimonial-container desktop-only-hidden">
+          <div className="testimonial mobile-testimonial">
+            <p>"We've collaborated on various projects together, he's very professional and a master in his craft."</p>
+            <div className="author">
+              <div>
+                <strong>Aman V.</strong>
+                <span>Founder & CEO, Studio Nova</span>
+              </div>
+              <img src="/profile.png" alt="Aman V." />
+            </div>
+          </div>
+        </div>
+
         <ByTheNumbers />
         <About />
         <MyStory />
         <ProofVault />
-        <TechStack />
-        <Specializations />
-        <SocialProof />
+        
+        {!isStatic ? (
+          <MatrixBackground>
+            <div className="dynamic-sections-wrapper">
+              <TechStack />
+              <Specializations />
+              <SocialProof />
+            </div>
+          </MatrixBackground>
+        ) : (
+          <>
+            <TechStack />
+            <Specializations />
+            <SocialProof />
+          </>
+        )}
       </main>
     </>
   );
