@@ -1,0 +1,182 @@
+/* src/components/LoadingScreen.css */
+/* 
+ * Pixel2Motion Principles Applied:
+ * - Staggered letter cascade
+ * - Slow in / Slow out cubic-bezier easing
+ * - Draw on swoosh
+ */
+
+:root {
+  --p2m-duration: 2000ms;
+  --p2m-ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --p2m-ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+}
+
+.p2m-loading-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(135deg, var(--orange-dark) 0%, var(--orange-light) 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 99999;
+  transition: opacity 0.5s ease-in-out, visibility 0.5s;
+  opacity: 1;
+  visibility: visible;
+}
+
+.p2m-loading-container.p2m-hide {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.p2m-content-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.p2m-wordmark-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.p2m-wordmark-text {
+  font-family: 'Oswald', sans-serif;
+  font-size: clamp(60px, 8vw, 120px);
+  font-weight: 700;
+  color: var(--text-white, #ffffff);
+  margin: 0;
+  line-height: 1.1;
+  display: flex;
+  align-items: baseline;
+}
+
+.p2m-letter {
+  display: inline-block;
+  opacity: 0;
+  transform: translateY(40px);
+  transform-origin: center bottom;
+  animation: p2m-letter-reveal 800ms both;
+}
+
+.p2m-space {
+  display: inline-block;
+  width: 0.3em;
+}
+
+.p2m-swoosh-svg {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  overflow: visible;
+  margin-top: -10px;
+}
+
+/* Stagger the cascade */
+#letter-A { animation-delay: 100ms; }
+#letter-s { animation-delay: 150ms; }
+#letter-h { animation-delay: 200ms; }
+#letter-t { animation-delay: 250ms; }
+#letter-o { animation-delay: 300ms; }
+#letter-n { animation-delay: 350ms; }
+
+#letter-K { animation-delay: 500ms; }
+#letter-i { animation-delay: 550ms; }
+#letter-t1 { animation-delay: 600ms; }
+#letter-t2 { animation-delay: 650ms; }
+
+@keyframes p2m-letter-reveal {
+  0% {
+    opacity: 0;
+    transform: translateY(40px) scale(0.9);
+    animation-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+#swoosh {
+  fill: none;
+  stroke: var(--text-white, #ffffff);
+  stroke-width: 8;
+  stroke-linecap: round;
+  stroke-dasharray: 1;
+  stroke-dashoffset: 1;
+  animation: p2m-draw-on 1200ms 800ms both;
+}
+
+@keyframes p2m-draw-on {
+  0% {
+    stroke-dashoffset: 1;
+    animation-timing-function: cubic-bezier(0.65, 0, 0.35, 1);
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+.p2m-loading-indicator {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--text-white, #ffffff);
+  font-family: 'Inter', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  opacity: 0;
+  animation: p2m-fade-in 800ms 1200ms both;
+}
+
+.p2m-loading-dots {
+  display: flex;
+  gap: 4px;
+}
+
+.p2m-dot {
+  width: 4px;
+  height: 4px;
+  background-color: var(--text-white, #ffffff);
+  border-radius: 50%;
+  animation: p2m-bounce 1.4s infinite ease-in-out both;
+}
+
+.p2m-dot:nth-child(1) { animation-delay: -0.32s; }
+.p2m-dot:nth-child(2) { animation-delay: -0.16s; }
+.p2m-dot:nth-child(3) { animation-delay: 0s; }
+
+@keyframes p2m-bounce {
+  0%, 80%, 100% { transform: scale(0); }
+  40% { transform: scale(1); }
+}
+
+@keyframes p2m-fade-in {
+  0% { opacity: 0; }
+  100% { opacity: 0.9; }
+}
+
+/* Prefer reduced motion safety */
+@media (prefers-reduced-motion: reduce) {
+  .p2m-letter,
+  #swoosh,
+  .p2m-loading-indicator {
+    animation: none;
+    opacity: 1;
+    transform: none;
+    stroke-dashoffset: 0;
+  }
+  .p2m-dot {
+    animation: none;
+    transform: scale(1);
+  }
+}
