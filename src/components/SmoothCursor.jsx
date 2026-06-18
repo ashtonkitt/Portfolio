@@ -10,7 +10,7 @@ export default function SmoothCursor() {
         cursorRef.current.style.transform = `translate3d(${e.clientX - 4}px, ${e.clientY - 4}px, 0)`;
 
         // Determine if we are hovering over a light area
-        const isLightArea = e.target.closest('.side-right, .main-content, .resume-page');
+        const isLightArea = e.target.closest('.side-right, .main-content, .resume-page, .portfolio-footer');
         
         // Determine if we are hovering over a dark button/element within a light area
         const isDarkElement = e.target.closest('.cert-tag, .filter-btn.active, .timeline-dot, .scroll-to-top-btn');

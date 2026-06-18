@@ -18,6 +18,7 @@ import ProofVault from '../components/sections/ProofVault';
 import TechStack from '../components/sections/TechStack';
 import Specializations from '../components/sections/Specializations';
 import SocialProof from '../components/sections/SocialProof';
+import Footer from '../components/sections/Footer';
 
 const RotatingRoles = () => {
   const roles = [
@@ -79,7 +80,7 @@ function Portfolio() {
             <a href="#proof" onClick={() => setIsMobileMenuOpen(false)}>PROOF</a>
             <a href="#tech-stack" onClick={() => setIsMobileMenuOpen(false)}>TECH STACK</a>
             <Link to="/resume" onClick={() => setIsMobileMenuOpen(false)}>RESUME</Link>
-            <a href="#story" onClick={() => setIsMobileMenuOpen(false)}>TIMELINE</a>
+
           </nav>
         </div>
       )}
@@ -171,10 +172,10 @@ function Portfolio() {
                 <span>AVAILABLE FOR FREELANCE</span>
               </div>
               <div className="avatars">
-                <img src="/profile.png" alt="User 1" />
-                <img src="/profile.png" alt="User 2" />
-                <img src="/profile.png" alt="User 3" />
-                <img src="/profile.png" alt="User 4" />
+                <img src="/agency1.png" alt="Agency Partner 1" />
+                <img src="/agency2.png" alt="Agency Partner 2" />
+                <img src="/agency3.png" alt="Agency Partner 3" />
+                <img src="/agency4.png" alt="Agency Partner 4" />
                 <div className="more-count">+12</div>
               </div>
               <p>Trusted by forward-thinking brands worldwide.</p>
@@ -195,7 +196,7 @@ function Portfolio() {
               <a href="#proof">PROOF</a>
               <a href="#tech-stack">TECH STACK</a>
               <Link to="/resume">RESUME</Link>
-              <a href="#story">TIMELINE</a>
+
             </nav>
             <StaticToggle />
           </div>
@@ -263,6 +264,8 @@ function Portfolio() {
           </>
         )}
       </main>
+      
+      <Footer />
     </>
   );
 }

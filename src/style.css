@@ -306,10 +306,10 @@ a, button {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: transparent;
-  color: var(--text-white);
+  background-color: var(--text-white);
+  color: var(--orange-dark);
   font-size: 0.85rem;
-  font-weight: 600;
+  font-weight: 700;
 }
 
 .trusted-by p {
